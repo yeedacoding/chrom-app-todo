@@ -1,3 +1,12 @@
 body {
   background-color: skyblue;
 }
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
