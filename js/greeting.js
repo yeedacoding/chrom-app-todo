@@ -16,7 +16,7 @@ function onLoginSubmit(event) {
 
 function paintGreetings(userName){                          //외부에서 savedUsername을 argument로서 호출하면 (=이미 local storage에 value가 저장되어 있으면=밑에 if문) local storage에 저장된 value를 화면에 보여준다.
     greeting.classList.remove(HIDDEN_CLASSNAME);
-    greeting.innerText = `Hello ${userName}`;
+    greeting.innerText = `Hello ${userName}!`;
 }
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
