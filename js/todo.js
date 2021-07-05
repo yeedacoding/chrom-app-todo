@@ -23,7 +23,7 @@ function paintToDo(newTodo) {                               //4. paintToDo funct
     const span = document.createElement("span");
     span.innerText = newTodo.text;                           //5. span태그 안에 input에 입력한 value가 들어간다 
     const button = document.createElement("button");    //list를 삭제할 button을 만듦
-    button.innerText = "❌"
+    button.innerText = "X"
     button.addEventListener("click", deleteToDo)
     li.appendChild(span);                                   //6. li태그 안에 span태그를 넣은 뒤
     li.appendChild(button);                             //button을 li에 포함시키기

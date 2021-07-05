@@ -8,8 +8,8 @@ function onGeoOK(position) {
         const city = document.querySelector("#weather div:first-child");
         const weather = document.querySelector("#weather div:last-child");
        city.innerText = data.name;
-       weather.innerText = `${data.weather[0].main} / ${data.main.temp}℃`;
-    });
+       weather.innerText = ` ${Math.floor(data.main.temp)}℃ @ ${data.weather[0].main}`;
+    }); 
 }
 function onGeoError() {
     alert("Can't find you. No weather for you")

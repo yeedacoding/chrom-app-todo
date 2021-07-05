@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC&family=Otomanopee+One&display=swap");
+
 body {
   font-family: "Encode Sans SC", sans-serif;
   position: relative;
@@ -23,10 +25,6 @@ img {
   height: 100%;
   text-align: center;
   z-index: 1;
-}
-
-.container {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,7 +33,8 @@ img {
 
 #clock {
   font-size: 100px;
-  text-shadow: -1px 0 2px #000, 0 1px 2px #000, 1px 0 2px #000, 0 -1px 2px #000;
+  text-shadow: -1px 0 3px rgb(0, 0, 0), 0 1px 3px rgb(0, 0, 0),
+    1px 0 3px rgb(0, 0, 0), 0 -1px 3px rgb(0, 0, 0);
   color: white;
   font-weight: 600;
   margin-bottom: 40px;
@@ -52,7 +51,7 @@ img {
 }
 
 #todo-form input {
-  width: 300px;
+  width: 350px;
   border: none;
   border-bottom: 2px solid rgba(255, 255, 255, 0.6);
   padding: 12px 0;
@@ -94,12 +93,33 @@ img {
 
 #greeting {
   color: white;
-  text-shadow: 0 1px #000;
+  text-shadow: -1px 0 3px rgb(0, 0, 0), 0 1px 3px rgb(0, 0, 0),
+    1px 0 3px rgb(0, 0, 0), 0 -1px 3px rgb(0, 0, 0);
+  margin-top: 0px;
 }
 
 #todo-list {
   color: white;
   text-shadow: 0 1px #000;
+}
+
+#todo-list span {
+  color: white;
+  text-shadow: 0 1px #000;
+  font-size: 20px;
+}
+
+#todo-list button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: red;
+  font-weight: 600;
+}
+
+#todo-list .list-box {
+  width: 30%;
+  height: 30%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #quote {
@@ -111,12 +131,12 @@ img {
 #quote div:first-child {
   font-size: 20px;
   font-weight: 500;
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  text-shadow: 0 2px #000;
 }
 #quote div:last-child {
   font-size: 17px;
   font-weight: 500;
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  text-shadow: 0 2px #000;
 }
 
 #weather {
@@ -124,8 +144,16 @@ img {
   top: 10px;
   right: 10px;
   z-index: 1;
-  font-size: 18px;
-  font-weight: 500;
   color: white;
   text-shadow: 0 2px #000;
+}
+
+#weather div:first-child {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#weather div:last-child {
+  font-size: 18px;
+  font-weight: 500;
 }
