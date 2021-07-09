@@ -12,11 +12,26 @@ body {
   display: none;
 }
 
+.alert {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+.alert-covid {
+  color: white;
+  font-weight: 500;
+  text-shadow: 0 1px #000;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
 img {
   position: relative;
   height: 100vh;
   width: 100vw;
   background-size: cover;
+  z-index: -1;
 }
 
 .text-design {
@@ -24,7 +39,6 @@ img {
   width: 100%;
   height: 100%;
   text-align: center;
-  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
